@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+<link rel="stylesheet" href="./style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+
+<body>
+<header>
+  Weather Dashboard
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="sidenav col-sm-3">
+      <form>
+        <label><h4>Search for a City:</h4></label>
+        <input id="input" type="text" id="searchBar">
+        <input id="btn" type="submit" value="search">
+      
+       
+      </form>
+    
+      <!-- Retrieved data will be dumped here -->
+      <div class="city"></div>
+      
+     
+
+    </div> <!--closing col div-->
+  
+
+    <div class="col-sm-9" >
+      <div class="row">
+        <div class="col-12" id="city-display">
+          <div class="card-body">
+          <h1 class="city-name">CityName</h1>
+          <img class="api-icon" src="" alt="Weather Icon">
+          <ul>
+            <li class="wind"></li>
+            <li class="humidity"></li>
+            <li class="temp"></li>
+            <li class="UV"></li>
+          </ul>
+          </div>
+        </div>
+
+        <div class="col-12 week-forecast">
+          <div class="card" id="day1"></div>
+          <div class="card" id="day2"></div>
+          <div class="card" id="day3"></div>
+          <div class="card" id="day4"></div>
+          <div class="card" id="day5"></div>
+      </div>
+      </div>
+       
+      
+    </div>
+
+
+  </div> <!--closing row div-->
+    
+
+      
+</div>  <!-- closing primary container div -->
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      <script src="index.js"></script>
+      
+      <!-- Latest compiled and minified JavaScript -->
+
+</body>
+
+</html>

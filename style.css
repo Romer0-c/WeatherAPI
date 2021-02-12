@@ -1,0 +1,12 @@
+body {
+    padding: 0;
+}
+
+header {
+    color: white;
+    background-color: #1e5c9b;
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    padding: 10px;
+}
