@@ -91,7 +91,7 @@ function getWeatherData(citySearched) {
             $(".city-name").html(response.name + " Weather Details");
             $(".wind").text("Wind Speed: " + response.wind.speed);
             $(".humidity").text("Humidity: " + response.main.humidity);
-            $(".api-icon").attr("src", `http://openweathermap.org/img/w/${response.weather[0].icon}.png`);
+            $(".api-icon").attr("src", `https://openweathermap.org/img/w/${response.weather[0].icon}.png`);
             // Convert the temp to fahrenheit
             //var tempF = (response.main.temp - 273.15) * 1.80 + 32;
 
@@ -110,7 +110,7 @@ function getWeatherData(citySearched) {
             })
             .then(function(uvResponse){
                 console.log(uvResponse);
-                $(".UV").text(uvResponse.current.uvi)
+                $(".UV").text("UV Index: " + uvResponse.current.uvi)
             })
         });
 
