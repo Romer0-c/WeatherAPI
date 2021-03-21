@@ -96,7 +96,7 @@ function getWeatherData(citySearched) {
             //var tempF = (response.main.temp - 273.15) * 1.80 + 32;
 
             // add temp content to html
-            $(".temp").text("Temperature" + response.main.temp + "F ");
+            $(".temp").text("Temperature: " + response.main.temp + "F");
             //$(".tempF").text("Temperature (F) " + tempF.toFixed(2));
 
             // Log the data in the console as well
@@ -117,24 +117,24 @@ function getWeatherData(citySearched) {
 };
 
 
-function getFiveDay(citySearched) {
+// function getFiveDay(citySearched) {
 
 
 
-    var fiveDayURL = `https://api.openweathermap.org/data/2.5/forecast?q=${citySearched}&appid=${APIKey}&units=imperial`;
+//     var fiveDayURL = `https://api.openweathermap.org/data/2.5/forecast?q=${citySearched}&appid=${APIKey}&units=imperial`;
 
-    $.ajax({
-        url: fiveDayURL,
-        method: "GET"
-    })
-        .then(function(response){
-            console.log(response)
+//     $.ajax({
+//         url: fiveDayURL,
+//         method: "GET"
+//     })
+//         .then(function(response){
+//             console.log(response)
 
-            $("#day1").html(response.list[0].main.temp)
-            $("#day2").text("")
-        });
+//             $("#day1").html(response.list[0].main.temp)
+//             $("#day2").text("")
+//         });
 
-};
+// };
 
 
 $(document).on("click", ".searched-btn", function(){
